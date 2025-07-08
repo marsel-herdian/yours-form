@@ -2,11 +2,11 @@ import DangerousIcon from '@mui/icons-material/Dangerous';
 import HomeIcon from '@mui/icons-material/Home';
 import { useEffect } from 'react';
 
-// Set title
-useEffect(() => {
-    document.title = `Page Not Found | Yours Form`;
-}, []);
 export default function NoPage() {
+  // Set title
+  useEffect(() => {
+      document.title = `Page Not Found | Yours Form`;
+  }, []);
   return (
     <div className='flex flex-col items-center justify-center h-screen gap-8 text-red-500'>
       <DangerousIcon fontSize="large" className="text-red-500 scale-200" />

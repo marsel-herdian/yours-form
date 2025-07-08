@@ -48,7 +48,7 @@ export default function DetailForm() {
       setQuestions(form.questions);
     }
   }, [form]);
-  
+
   // Set dynamic title
   useEffect(() => {
     if (form?.name) {
@@ -110,10 +110,12 @@ export default function DetailForm() {
       {/* Form Details */}
       <h1 className="text-3xl font-bold">{form.name}</h1>
 
+      {/* Form Link */}
       <div className="space-y-2 ">
         <div className="flex items-center gap-2">
           <p>
-            <span className="font-semibold">Slug:</span> {form.slug}
+            <span className="font-semibold">Form Link:</span>{' '}
+            {`${window.location.origin}/submit/${form.slug}`}
           </p>
           <Tooltip title={copied ? 'Copied!' : 'Copy Link'} arrow>
             <IconButton
@@ -130,6 +132,7 @@ export default function DetailForm() {
           </Tooltip>
         </div>
 
+        {/* Form Descriptions */}
         <p><span className="font-semibold">Description:</span> {form.description}</p>
         <p><span className="font-semibold">Limit Response:</span> {form.limit_one_response ? '1 response' : 'none'}</p>
         <p><span className="font-semibold">Allowed Domains:</span> {form.allowed_domains.join(', ')}</p>

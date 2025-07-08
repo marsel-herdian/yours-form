@@ -2,12 +2,12 @@ import BlockIcon from '@mui/icons-material/Block';
 import HomeIcon from '@mui/icons-material/Home';
 import { useEffect } from 'react';
 
-// Set title
-useEffect(() => {
-    document.title = `Forbidden | Yours Form`;
-}, []);
 
 export default function Forbidden() {
+  // Set title
+  useEffect(() => {
+      document.title = `Forbidden | Yours Form`;
+  }, []);
   return (
     <div className="flex flex-col items-center justify-center h-screen gap-8">
       <BlockIcon fontSize="large" className="text-red-500 scale-200" />
