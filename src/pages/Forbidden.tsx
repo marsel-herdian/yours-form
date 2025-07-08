@@ -1,5 +1,11 @@
 import BlockIcon from '@mui/icons-material/Block';
 import HomeIcon from '@mui/icons-material/Home';
+import { useEffect } from 'react';
+
+// Set title
+useEffect(() => {
+    document.title = `Forbidden | Yours Form`;
+}, []);
 
 export default function Forbidden() {
   return (

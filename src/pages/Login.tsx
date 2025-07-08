@@ -61,7 +61,7 @@ export default function Login() {
 
     // Set title
     useEffect(() => {
-        document.title = `Login | Yours Forms`;
+        document.title = `Login | Yours Form`;
     }, []);
 
     // Toggle password visibility

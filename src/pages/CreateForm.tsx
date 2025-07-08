@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import type { RootState } from '../app/store';
 import { TextField, Button, Checkbox, FormControlLabel } from '@mui/material';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 // Yup schema
 const schema = yup.object({
@@ -42,6 +42,11 @@ export default function CreateForm() {
   const user = useSelector((state: RootState) => state.auth.user);
   const nameValue = watch('name');
   const [showSuggestion, setShowSuggestion] = useState(false);
+
+  // Set title
+  useEffect(() => {
+      document.title = `Create New Form | Yours Form`;
+  }, []);
 
   // Slug auto suggestion
   const suggestedSlug = nameValue

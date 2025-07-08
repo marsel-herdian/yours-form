@@ -39,7 +39,7 @@ export default function Home() {
 
   // Set title
   useEffect(() => {
-    document.title = `Home | Yours Forms`;
+    document.title = `Home | Yours Form`;
   }, []);
 
   // Navigate to create form
