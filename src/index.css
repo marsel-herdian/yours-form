@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+html {
+  background-color: antiquewhite;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  
+}
