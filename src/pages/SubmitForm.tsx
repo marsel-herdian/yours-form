@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 import type { RootState } from '../app/store';
 import type { FormDetail, Question } from '../types';
 import Questionare from '../components/Questionare';
+import Loading from '../components/Loading';
 
 export default function SubmitForm() {
     const { slug } = useParams();
@@ -111,7 +112,7 @@ export default function SubmitForm() {
     });
 
     // Render placeholder 
-    if (loading) return <div className="text-center py-10">Loading form...</div>;
+    if (loading) return <Loading/>;
     if (error) return <div className="text-center text-red-500 py-10">{error}</div>;
     if (!form) return <div className="text-center py-10 text-red-500">Form not found</div>;
 
