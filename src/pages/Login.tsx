@@ -75,7 +75,10 @@ export default function Login() {
                 onSubmit={handleSubmit(onSubmit)}
                 className="bg-white p-6 rounded shadow-md w-full max-w-md space-y-4"
             >
-                <h1 className='text-4xl font-bold text-center text-indigo-600'>Yours Form</h1>
+                <div className='flex flex-row items-center gap-2 w-fit mx-auto '>
+                    <img src="/form-icon.svg" alt="dummy-logo" className='max-w-8 max-h-8 mx-auto'/>
+                    <h1 className='text-4xl font-bold text-center text-indigo-600 text-nowrap'>Yours Form</h1>
+                </div>
                 <h2 className="text-2xl font-bold text-center mb-8">Login</h2>
 
                 <div className='flex flex-col gap-4'>
