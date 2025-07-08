@@ -177,7 +177,7 @@ export default function DetailForm() {
                 <button
                   className="px-4 py-2 rounded transition
                                 bg-indigo-500 text-white hover:bg-indigo-600
-                                disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed"
+                                disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed cursor-pointer"
                   onClick={() => setIsEditing(true)}
                   disabled={isEditing}
                 >
@@ -187,7 +187,7 @@ export default function DetailForm() {
                 <button
                   className="px-4 py-2 rounded transition
                                 bg-green-600 text-white hover:bg-green-700
-                                disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed"
+                                disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed cursor-pointer"
                   onClick={() => setIsEditing(false)}
                   disabled={!isEditing}
                 >
