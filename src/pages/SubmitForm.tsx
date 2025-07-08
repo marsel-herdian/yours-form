@@ -120,7 +120,7 @@ export default function SubmitForm() {
             {/* Form Details */}
             <div className="space-y-1 mx-2">
                 <h1 className="text-3xl font-bold">{form.name}</h1>
-                {form.description?.length > 0 ? <p className="text-gray-600">Description: {form.description}</p> : <p className="text-gray-600">No description provided.</p>}
+                {form.description?.length > 0 ? <p className="text-gray-600">{form.description}</p> : <p className="text-gray-600">No description provided.</p>}
                 <p className="text-sm text-gray-500">
                     <span className="font-semibold">Author:</span> {form.creator_id}
                 </p>
