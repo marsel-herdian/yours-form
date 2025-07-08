@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <header className="bg-white shadow px-6 py-4 flex justify-between items-center sticky top-0 z-50">
       <div className='flex items-center gap-2 text-indigo-600 hover:text-indigo-500 transition-all duration-500 ease-in-out' onClick={() => navigate('/')}>
-        <img src="/public/form-icon.svg" alt="dummy-logo" className='max-w-8 max-h-8' />
+        <img src="/form-icon.svg" alt="dummy-logo" className='max-w-8 max-h-8' />
         <h1 className="text-3xl font-bold  cursor-pointer text-nowrap">Yours Form</h1>
       </div>
 
